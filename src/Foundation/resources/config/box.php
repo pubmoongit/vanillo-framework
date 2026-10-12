@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 return [
     'modules' => [
-        Konekt\User\Providers\ModuleServiceProvider::class => [],
+        Konekt\User\Providers\ModuleServiceProvider::class => ['migrations' => false], // host app owns the users table
         Konekt\Address\Providers\ModuleServiceProvider::class => [],
         Konekt\Customer\Providers\ModuleServiceProvider::class => [],
         Vanilo\Adjustments\Providers\ModuleServiceProvider::class => [],
